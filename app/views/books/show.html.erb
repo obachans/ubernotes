@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>タイトル:</strong>
+  <%= @book.title %>
+</p>
+
+<p>
+  <strong>著者:</strong>
+  <%= @book.author %>
+</p>
+
+<p>
+  <strong>講義名:</strong>
+  <%= @book.lecture %>
+</p>
+
+<p>
+  <strong>値段:</strong>
+  <%= @book.price %>
+</p>
+
+<p>
+  <strong>詳細:</strong>
+  <%= @book.comment %>
+</p>
+
+<p>
+  <strong>出品者連絡先:</strong>
+  <%= @book.contact %>
+</p>
+
+<p>
+  <strong>イメージ:</strong>
+  <%= image_tag @book.image_path_url if @book.image_path.present? %>
+</p>
+
+<%= link_to 'Edit', edit_book_path(@book) %> |
+<%= link_to 'Back', books_path %>

@@ -1,0 +1,26 @@
+ja:
+  activerecord:
+    attributes:
+      book:
+        title: "タイトル"
+        author: "著者"
+        lecture: "講義名"
+        price: "値段"
+        contact: "出品者連絡先"
+    errors:
+      models:
+        book:
+          attributes:
+            title:
+              blank: "タイトルは必ず入力してください"
+              too_long: "タイトルが長すぎます"
+            author:
+              blank: "著者は必ず入力してください"
+              too_long: "著者の文字数が大きすぎます"
+            lecture:
+              blank: "講義名は必ず入力してください"
+              too_long: "講義名の文字数が大きすぎます"
+            price:
+              blank: "値段は必ず入力してください"
+            contact:
+              blank: "メールアドレスは必ず入力してください"

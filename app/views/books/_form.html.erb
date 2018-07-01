@@ -1,0 +1,13 @@
+<%= simple_form_for(book) do |f| %>
+  <%= f.input :title %>
+  <%= f.input :author %>
+  <%= f.input :lecture %>
+  <%= f.association :categories, as: :select, multiple: true %>
+  <%= f.input :price %>
+  <%= f.input :comment, placeholder: '教科書の説明（定価、書き込みの有無、保存状態、その他注意点など' %>
+  <%= f.input :contact %>
+  <%= f.input :image_path, as: :file %>
+  <div class="actions">
+    <%= f.button :submit, :class => 'btn-primary' %>
+  </div>
+<% end %>

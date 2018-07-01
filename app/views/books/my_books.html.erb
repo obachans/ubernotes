@@ -1,0 +1,4 @@
+<h1>出品した教科書一覧</h1>
+<%= render 'table', books: @books %>
+<%= paginate @books %>
+<%= link_to 'New Book', new_book_path, :class => 'btn btn-primary' %>

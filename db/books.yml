@@ -1,0 +1,14 @@
+books:
+  -
+    title: "教養英語Ⅰ""
+    author: "不明"
+    lecture:"英語Ⅰ"
+    price:"500"
+    contact:"stu_pichon@yahoo.co.jp"
+  -
+    title: "現代漢語基礎
+    author: "不明"
+    lecture:"中国語一列"
+    price:"500"
+    contact:"stu_pichon@yahoo.co.jp"
+  -
