@@ -7,6 +7,12 @@ ja:
         lecture: "講義名"
         price: "値段"
         contact: "出品者連絡先"
+        image_path: "イメージ"
+        comment: "備考"
+        edit: "編集"
+        
+        
+        
     errors:
       models:
         book:

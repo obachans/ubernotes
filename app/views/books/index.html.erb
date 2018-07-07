@@ -1,3 +1,7 @@
+<style>
+  backgroundcolor: red;
+</style>
+
 <form action="<%= books_path %>" method="get" class="form-inline">
   <input class="form-control" type="text" name="s_title" value="<%= request[:s_title] %>">
   <% options = options_for_select(Category.all.map{|c| [c.name, c.id]}, request[:s_category]) %>
@@ -28,8 +32,11 @@
         <td><%= book.price %></td>
         <td><%= book.comment %></td>
         <td><%= book.contact %></td>
-        <td><%= book.image_path%></td>
+        <td><%= image_tag book.image_path %></td>
         <td class="text-right">
+          <%= link_to 'Edit', edit_book_path(book), :class => 'btn btn-link btn-xs' %>
+ <%= link_to 'Delete', book_path(book), :class => 'btn btn-xs btn-danger',
+ :method => :delete, :data => { :confirm => 'Are you sure?' } %>
         </td>
       </tr>
     <% end %>

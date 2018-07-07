@@ -56,7 +56,7 @@ group :development do
  gem 'spring-watcher-listen', '~> 2.0.0'
  gem 'kaminari'
  gem 'carrierwave', '~> 1.1'
- gem 'mini_magick'
+ # gem 'mini_magick'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
